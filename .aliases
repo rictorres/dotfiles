@@ -128,3 +128,6 @@ alias reload="exec $SHELL -l"
 
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
+
+# Undo last commit
+alias undocommit="git reset --soft HEAD~1"
