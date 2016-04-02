@@ -53,6 +53,8 @@ brew install entr
 # github util. imho better than hub
 brew install gh
 
+# mysql autocomplete (https://github.com/dbcli/mycli)
+brew install mycli
 
 # mtr - ping & traceroute. best.
 brew install mtr
