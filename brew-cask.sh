@@ -19,10 +19,14 @@ brew cask install flux
 
 # dev
 brew cask install iterm2
+brew cask install ngrok
+# https://bsago.me/exa/
 brew cask install exa
 brew cask install sublime-text
 brew cask install imagealpha
 brew cask install imageoptim
+brew cask install virtualbox
+brew cask install vagrant
 
 # fun
 #brew cask install limechat
@@ -40,6 +44,9 @@ brew cask install google-chrome-canary
 #brew cask install disk-inventory-x
 brew cask install screenflow4 # 4 specifically not 5.
 brew cask install vlc
+brew cask install mplayerx
 brew cask install gpgtools
 brew cask install licecap
 brew cask install utorrent
+brew cask install skype
+brew cask install steam
