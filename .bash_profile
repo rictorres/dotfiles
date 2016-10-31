@@ -10,10 +10,10 @@ done;
 unset file;
 
 # Case-insensitive globbing (used in pathname expansion)
-shopt -s nocaseglob;
+#shopt -s nocaseglob;
 
 # Autocorrect typos in path names when using `cd`
-shopt -s cdspell;
+#shopt -s cdspell;
 
 ##
 ## gotta tune that bash_history…
@@ -29,7 +29,7 @@ export HISTSIZE=100000                          # big big history (default is 50
 export HISTFILESIZE=$HISTSIZE                   # big big history
 
 # Append to the Bash history file, rather than overwriting it
-shopt -s histappend;
+#shopt -s histappend;
 
 # Enable some Bash 4 features when possible:
 # * `autocd`, e.g. `**/qux` will enter `./foo/bar/baz/qux`
