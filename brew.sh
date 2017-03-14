@@ -53,6 +53,9 @@ brew install entr
 # github util. imho better than hub
 brew install gh
 
+# https://github.com/so-fancy/diff-so-fancy
+brew install diff-so-fancy
+
 # mysql autocomplete (https://github.com/dbcli/mycli)
 brew install mycli
 
@@ -66,6 +69,7 @@ brew install mtr
 
 
 # Install other useful binaries
+brew install fzf
 brew install ack
 brew install dark-mode
 brew install sift
@@ -84,10 +88,10 @@ brew install tree
 brew install webkit2png
 brew install zopfli
 brew install ffmpeg --with-libvpx
-
 brew install terminal-notifier
-
 brew install zsh
+brew install mas
+brew install azukiapp/azk/azk
 
 # Remove outdated versions from the cellar
 brew cleanup
