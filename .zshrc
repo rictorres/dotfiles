@@ -14,9 +14,6 @@ fpath=( "$HOME/.zfunctions" $fpath )
 # Helper for extracting different types of archives.
 #$b extract
 
-# atom editor
-#$b atom
-
 # Tracks your most used directories, based on 'frecency'.
 #$b robbyrussell/oh-my-zsh plugins/z
 
@@ -159,7 +156,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/Users/rictorres/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/rictorres/.rvm/bin"
+export PATH="$PATH:/Users/rictorres/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/rictorres/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
