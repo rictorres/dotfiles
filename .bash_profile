@@ -1,5 +1,6 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/bin:$PATH";
+#export PATH="$HOME/bin:$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin";
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
@@ -77,7 +78,8 @@ fi;
 
 # homebrew completion
 if  which brew > /dev/null; then
-    source `brew --repository`/Library/Contributions/brew_bash_completion.sh
+	# https://github.com/paulirish/dotfiles/issues/80
+	source "$(brew --prefix)/etc/bash_completion.d/brew"
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
