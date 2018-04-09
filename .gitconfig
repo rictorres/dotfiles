@@ -1,5 +1,8 @@
 [alias]
 
+	# https://github.com/aanand/git-up/blob/91fd420c6a666bf0198fe9a59f05b99c98c1d23e/README.md
+	up = pull --rebase --autostash
+
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
