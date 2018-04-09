@@ -52,6 +52,13 @@ brew cask install chrome
 brew cask install firefox
 brew cask install google-chrome-canary
 
+# quick look
+brew cask install qlstephen
+brew cask install qlmarkdown
+brew cask install quicklook-json
+brew cask install qlimagesize
+brew cask install qlvideo
+
 # less often
 brew cask install screenflow4 # 4 specifically not 5.
 #brew cask install vlc
