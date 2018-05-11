@@ -91,7 +91,7 @@ brew install ffmpeg --with-libvpx
 brew install terminal-notifier
 brew install zsh
 brew install mas
-brew install azukiapp/azk/azk
+brew install exa # https://bsago.me/exa/
 
 # Remove outdated versions from the cellar
 brew cleanup
