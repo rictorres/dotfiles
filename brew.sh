@@ -93,5 +93,7 @@ brew install zsh
 brew install mas
 brew install exa # https://bsago.me/exa/
 
+brew install bash-snippets --without-all-tools --with-weather --with-currency --with-cryptocurrency
+
 # Remove outdated versions from the cellar
 brew cleanup
