@@ -131,7 +131,7 @@ function whois() {
 	/usr/bin/whois -h whois.internic.net $domain | sed '/NOTICE:/q'
 }
 
-function localip(){
+function localip2(){
 	function _localip(){ echo "📶  "$(ipconfig getifaddr "$1"); }
 	export -f _localip
 	local purple="\x1B\[35m" reset="\x1B\[m"
@@ -189,16 +189,6 @@ function s() {
 	fi;
 }
 
-# `a` with no arguments opens the current directory in Atom Editor, otherwise
-# opens the given location
-function a() {
-	if [ $# -eq 0 ]; then
-		atom .;
-	else
-		atom "$@";
-	fi;
-}
-
 # `v` with no arguments opens the current directory in Vim, otherwise opens the
 # given location
 function v() {
@@ -237,4 +227,26 @@ gifify() {
 # brew reinstall ffmpeg --with-libvpx
 webmify(){
 	ffmpeg -i $1 -vcodec libvpx -acodec libvorbis -isync -copyts -aq 80 -threads 3 -qmax 30 -y $2 $1.webm
+}
+
+# lists available npm scripts
+function zxc() {
+	cat package.json | jq '.scripts';
+}
+
+# finds all occurrences of a string in a path
+function fall() {
+	grep -rnw $1 -e $2
+}
+
+# goes up one dir
+function up(){
+	DEEP=$1;
+	for i in $(seq 1 ${DEEP:-"1"}); do cd ../; done;
+}
+
+# prints USD, BRL and GBP exchange rates
+function curr() {
+    local url="http://data.fixer.io/api/latest?access_key=$FIXER_API_KEY&format=1"
+    curl --silent $url\&symbols\=USD,BRL,GBP | jq '.rates';
 }
