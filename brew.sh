@@ -87,7 +87,7 @@ brew install testssl
 brew install tree
 brew install webkit2png
 brew install zopfli
-brew install ffmpeg --with-libvpx
+#brew install ffmpeg --with-libvpx
 brew install terminal-notifier
 brew install zsh
 brew install mas
