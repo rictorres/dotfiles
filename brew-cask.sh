@@ -20,6 +20,8 @@ brew cask install slack
 brew cask install caffeine
 brew cask install simplenote
 brew cask install the-unarchiver
+brew cask install numi
+brew cask install cheatsheet
 
 # dev
 brew cask install iterm2
