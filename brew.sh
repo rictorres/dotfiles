@@ -40,10 +40,6 @@ brew install grc
 
 # Install more recent versions of some OS X tools
 brew install vim --with-override-system-vi
-brew install homebrew/dupes/nano
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/openssh
-brew install homebrew/dupes/screen
 
 # z hopping around folders
 brew install z
@@ -66,7 +62,7 @@ brew install mtr
 # Install other useful binaries
 brew install fzf
 brew install git
-brew install imagemagick --with-webp
+brew install imagemagick
 brew install pv
 brew install rename
 brew install speedtest-cli
@@ -78,7 +74,7 @@ brew install mas
 brew install exa # https://bsago.me/exa/
 brew install ncdu # find where your diskspace went
 brew install awscli
-brew isntall bat
+brew install bat
 brew install ansible
 brew install jq
 brew install terraform
