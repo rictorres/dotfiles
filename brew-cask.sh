@@ -27,7 +27,6 @@ brew cask install imageoptim
 brew cask install virtualbox
 brew cask install postman
 brew cask install sequel-pro
-# brew cask install sourcetree
 brew cask install docker
 
 # browsers
@@ -47,7 +46,6 @@ brew cask install droplr
 brew cask install kap
 brew cask install vlc
 brew cask install gpgtools
-brew cask install filezilla
 
 # legacy
 
@@ -56,6 +54,7 @@ brew cask install filezilla
 # brew cask install steam
 
 # not on cask but much wanted
+# filezilla
 # pastebox
 # shazam
 # wunderlist
