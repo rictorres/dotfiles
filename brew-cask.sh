@@ -32,7 +32,7 @@ brew cask install docker
 
 # browsers
 brew cask install chrome
-# brew cask install firefox
+brew cask install firefox
 brew cask install google-chrome-canary
 
 # quick look
