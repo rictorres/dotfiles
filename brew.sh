@@ -28,7 +28,7 @@ brew install gnu-sed --with-default-names
 # running `chsh`.
 brew install bash
 
-brew install bash-ocmpletion
+brew install bash-completion
 
 brew install homebrew/completions/brew-cask-completion
 
