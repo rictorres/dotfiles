@@ -51,15 +51,22 @@ export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 ##
 ## hooking in other apps…
 ##
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # z beats cd most of the time.
 #   github.com/rupa/z
-source ~/code/z/z.sh
+# source ~/code/z/z.sh
+
+# z beats cd most of the time. `brew install z`
+if which brew > /dev/null; then
+    zpath="$(brew --prefix)/etc/profile.d/z.sh"
+    [ -s $zpath ] && source $zpath
+fi;
 
 ##
 ## Completion…
@@ -69,22 +76,27 @@ if [[ -n "$ZSH_VERSION" ]]; then  # quit now if in zsh
     return 1 2> /dev/null || exit 1;
 fi;
 
-# Add tab completion for many Bash commands
-if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
-	source "$(brew --prefix)/share/bash-completion/bash_completion";
-elif [ -f /etc/bash_completion ]; then
-	source /etc/bash_completion;
-fi;
-
-# homebrew completion
+# Sorry, very MacOS centric here. :/
 if  which brew > /dev/null; then
-	# https://github.com/paulirish/dotfiles/issues/80
-	source "$(brew --prefix)/etc/bash_completion.d/brew"
+
+    # bash completion.
+    if [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
+        source "$(brew --prefix)/share/bash-completion/bash_completion";
+    elif [ -f /etc/bash_completion ]; then
+        source /etc/bash_completion;
+    fi
+
+    # homebrew completion
+    source "$(brew --prefix)/etc/bash_completion.d/brew"
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type _git &> /dev/null && [ -f /usr/local/etc/bash_completion.d/git-completion.bash ]; then
 	complete -o default -o nospace -F _git g;
+fi;
+
+if type __git_complete &> /dev/null; then
+    __git_complete g __git_main
 fi;
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
@@ -96,3 +108,5 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+
+# export PATH="$HOME/.cargo/bin:$PATH"
