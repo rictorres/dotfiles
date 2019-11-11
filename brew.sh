@@ -78,6 +78,7 @@ brew install bat
 brew install ansible
 brew install jq
 brew install terraform
+brew install lsd # https://github.com/Peltoche/lsd
 
 brew install zsh
 
