@@ -16,6 +16,7 @@ brew cask install caffeine
 brew cask install simplenote
 brew cask install the-unarchiver
 brew cask install whatsapp
+brew cask install mailspring
 # brew cask install numi
 # brew cask install cheatsheet
 
