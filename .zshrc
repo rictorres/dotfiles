@@ -86,7 +86,7 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 
 
 # Load default dotfiles
-source ~/.bash_profile
+source ~/.bashrc
 
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
@@ -102,7 +102,7 @@ source ~/.bash_profile
 
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ricardo/.oh-my-zsh
+export ZSH=/Users/ricardo.torres/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -156,7 +156,7 @@ plugins=(git docker)
 
 # User configuration
 
-# export PATH="$PATH:/Users/rictorres/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/rictorres/.rvm/bin"
+# export PATH="$PATH:/Users/ricardo.torres/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/ricardo.torres/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -185,14 +185,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/ricardo/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/ricardo/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/ricardo/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/ricardo/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
-
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/ricardo/new10/projects/ui-router/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/ricardo/new10/projects/ui-router/node_modules/tabtab/.completions/slss.zsh
