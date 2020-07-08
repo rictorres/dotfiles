@@ -21,6 +21,7 @@ brew cask install mailspring
 # brew cask install cheatsheet
 
 # dev
+brew cask install visual-studio-code
 brew cask install iterm2
 brew cask install ngrok
 brew cask install imagealpha
