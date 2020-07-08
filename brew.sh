@@ -68,7 +68,7 @@ brew install rename
 brew install speedtest-cli
 brew install tree
 brew install zopfli
-brew install ffmpeg --with-libvpx
+brew install ffmpeg
 brew install terminal-notifier
 brew install mas
 brew install exa # https://bsago.me/exa/
