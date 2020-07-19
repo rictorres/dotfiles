@@ -80,6 +80,12 @@
 	}; f"
 	dsf = "!f() { [ -z \"$GIT_PREFIX\" ] || cd \"$GIT_PREFIX\" && git diff --color \"$@\" | diff-so-fancy  | less --tabs=4 -RFX; }; f"
 
+	# show commit log of unique commits of this branch (not on master)
+	diffcommitsfrommaster = log --no-merges master..
+	# show unified diff of unique commits of this branch
+	difffrommaster = diff master...
+	# ^^^^ Holy crap two dots vs three dots, so important. https://stackoverflow.com/a/48681527
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
@@ -191,7 +197,7 @@
 	email = ricardo.torres@new10.com
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
