@@ -37,11 +37,11 @@ brew cask install firefox
 brew cask install google-chrome-canary
 
 # quick look
-brew cask install qlstephen
-brew cask install qlmarkdown
-brew cask install quicklook-json
-brew cask install qlimagesize
-brew cask install qlvideo
+# brew cask install qlstephen
+# brew cask install qlmarkdown
+# brew cask install quicklook-json
+# brew cask install qlimagesize
+# brew cask install qlvideo
 
 # less often
 brew cask install droplr
