@@ -3,9 +3,7 @@
 
 mkdir -p ~/backup/home
 mkdir -p ~/backup/home/Library/"Application Support"
-mkdir -p ~/backup/Library/Preferences/
-mkdir -p ~/backup/Library/Application Support/
-mkdir -p ~/backup/rootLibrary/Preferences/SystemConfiguration/
+mkdir -p ~/backup/Library/Preferences/SystemConfiguration/
 
 # what is worth reinstalling?
 brew leaves              > ~/backup/brew-list.txt    # all top-level brew installs
@@ -30,8 +28,8 @@ cp -Rp \
     ~/.zsh_history \
         ~/backup/home
 
-cp -Rp /Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist ~/backup/rootLibrary/Preferences/SystemConfiguration/ # wifi
-cp -Rp ~/Library/Fonts ~/backup/Library/ # all those fonts you've installed
+cp -Rp /Library/Preferences/SystemConfiguration/com.apple.airport.preferences.plist ~/backup/Library/Preferences/SystemConfiguration/ # wifi
+cp -Rp ~/Library/Fonts ~/backup/home/Library/ # all those fonts you've installed
 
 # editor settings & plugins
-cp -Rp ~/Library/Application\ Support/Code ~/backup/Library/"Application Support"
+cp -Rp ~/Library/Application\ Support/Code ~/backup/home/Library/Application\ Support
