@@ -9,13 +9,14 @@ brew install caskroom/cask/brew-cask
 
 # daily
 brew cask install spectacle
-brew cask install rescuetime
+# brew cask install rescuetime
 brew cask install spotify
 brew cask install slack
 brew cask install caffeine
 brew cask install simplenote
 brew cask install the-unarchiver
 brew cask install whatsapp
+brew cask install telegram
 brew cask install mailspring
 # brew cask install numi
 # brew cask install cheatsheet
