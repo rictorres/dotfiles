@@ -101,3 +101,5 @@ fi;
 complete -W "NSGlobalDomain" defaults;
 
 # export PATH="$HOME/.cargo/bin:$PATH"
+
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
