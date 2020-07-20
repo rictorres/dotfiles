@@ -1,11 +1,11 @@
-#!/bin/bash
+	#!/bin/bash
 
 # to maintain cask ....
 #     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
 # Install native apps
 
-brew install caskroom/cask/brew-cask
+brew install homebrew/cask-cask
 
 # daily
 brew cask install spectacle
@@ -14,7 +14,7 @@ brew cask install spotify
 brew cask install slack
 brew cask install caffeine
 brew cask install simplenote
-brew cask install the-unarchiver
+# brew cask install the-unarchiver
 brew cask install whatsapp
 brew cask install telegram
 brew cask install mailspring
@@ -33,9 +33,9 @@ brew cask install sequel-pro
 brew cask install docker
 
 # browsers
-brew cask install chrome
+brew cask install google-chrome
 brew cask install firefox
-brew cask install google-chrome-canary
+brew cask install homebrew/cask-versions/google-chrome-canary
 
 # quick look
 # brew cask install qlstephen
@@ -48,7 +48,7 @@ brew cask install google-chrome-canary
 brew cask install droplr
 brew cask install kap
 brew cask install vlc
-brew cask install gpgtools
+# brew cask install gpgtools # unavailable
 
 # legacy
 
