@@ -102,7 +102,7 @@ source ~/.bashrc
 
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/ricardo.torres/.oh-my-zsh
+export ZSH=/Users/ricardotorres/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -156,7 +156,7 @@ plugins=(git docker)
 
 # User configuration
 
-# export PATH="$PATH:/Users/ricardo.torres/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/ricardo.torres/.rvm/bin"
+# export PATH="$PATH:/Users/ricardotorres/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/Users/ricardotorres/.rvm/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
