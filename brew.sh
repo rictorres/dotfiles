@@ -23,7 +23,7 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed
 
-# Install Bash 4.
+# Install latest Bash
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
@@ -55,38 +55,26 @@ brew install diff-so-fancy
 # mysql autocomplete (https://github.com/dbcli/mycli)
 brew install mycli
 
-# mtr - ping & traceroute. best.
-brew install mtr
-
-    # allow mtr to run without sudo
-    mtrlocation=$(brew info mtr | grep Cellar | sed -e 's/ (.*//') #  e.g. `/Users/paulirish/.homebrew/Cellar/mtr/0.86`
-    sudo chmod 4755 $mtrlocation/sbin/mtr
-    sudo chown root $mtrlocation/sbin/mtr
-
-
 # Install other useful binaries
 brew install fzf
 brew install git
 brew install imagemagick
-brew install pv
-brew install rename
 brew install speedtest-cli
 brew install tree
-brew install zopfli
 brew install ffmpeg
-brew install terminal-notifier
 brew install mas
 brew install exa # https://bsago.me/exa/
 brew install ncdu # find where your diskspace went
 brew install awscli
 brew install bat
-brew install ansible
 brew install jq
 brew install terraform
 brew install lsd # https://github.com/Peltoche/lsd
-brew install ncdu # find where your diskspace went
 
 brew install zsh
+
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Remove outdated versions from the cellar
 brew cleanup

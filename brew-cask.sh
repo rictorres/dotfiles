@@ -1,64 +1,43 @@
-	#!/bin/bash
+#!/bin/bash
 
 # to maintain cask ....
 #     brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
 
-# Install native apps
-
 brew install homebrew/cask-cask
 
-# daily
-brew cask install spectacle
-# brew cask install rescuetime
-brew cask install spotify
-brew cask install slack
-brew cask install caffeine
-brew cask install simplenote
-# brew cask install the-unarchiver
-brew cask install whatsapp
-brew cask install telegram
-brew cask install mailspring
-# brew cask install numi
-# brew cask install cheatsheet
-
-# dev
-brew cask install visual-studio-code
-brew cask install iterm2
-brew cask install ngrok
-brew cask install imagealpha
-brew cask install imageoptim
-brew cask install virtualbox
-brew cask install postman
-brew cask install sequel-pro
-brew cask install docker
+# work related
+# brew install --cask slack
+# brew install --cask virtualbox
 
 # browsers
-brew cask install google-chrome
-brew cask install firefox
-brew cask install homebrew/cask-versions/google-chrome-canary
+brew install --cask google-chrome
+brew install --cask google-chrome-canary
+brew install --cask brave-browser
+brew install --cask firefox
 
-# quick look
-# brew cask install qlstephen
-# brew cask install qlmarkdown
-# brew cask install quicklook-json
-# brew cask install qlimagesize
-# brew cask install qlvideo
+# utils
+brew install --cask rectangle
+brew install --cask spotify
+brew install --cask caffeine
+brew install --cask simplenote
+brew install --cask whatsapp
+brew install --cask telegram
+brew install --cask mailspring
+brew install --cask setapp
+brew install --cask kap
+brew install --cask vlc
+brew install --cask notion
 
-# less often
-brew cask install droplr
-brew cask install kap
-brew cask install vlc
-# brew cask install gpgtools # unavailable
-
-# legacy
-
-# brew cask install postico
-# brew cask install psequel
-# brew cask install steam
+# dev
+brew install --cask visual-studio-code
+brew install --cask iterm2
+brew install --build-from-source fnm
+brew install --cask postman
+brew install --cask sequel-ace
+brew install --cask docker
+# brew install --cask ngrok
+# brew install --cask imagealpha
+# brew install --cask imageoptim
 
 # not on cask but much wanted
-# filezilla
 # pastebox
-# shazam
-# wunderlist
-# medis
