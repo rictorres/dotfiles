@@ -43,7 +43,7 @@ fi
 ##############################################################################################################
 
 # install homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # install all the things
 ./brew.sh
@@ -53,12 +53,6 @@ fi
 
 # autocompletion for git branch names https://git-scm.com/book/en/v1/Git-Basics-Tips-and-Tricks
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
-
-# github.com/rupa/z   - oh how i love you
-# git clone https://github.com/rupa/z.git ~/code/z
-# chmod +x ~/code/z/z.sh
-# consider reusing your current .z file if possible. it's painful to rebuild :)
-# z is hooked up in .bash_profile
 
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments
@@ -70,9 +64,6 @@ sudo bash -c 'echo $(brew --prefix)/bin/bash >> /etc/shells'
 chsh -s $BASHPATH # will set for current user only.
 echo $BASH_VERSION # should be 4.x not the old 3.2.X
 # Later, confirm iterm settings aren't conflicting.
-
-# install nvm
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 # set up osx defaults
 sh .macos
