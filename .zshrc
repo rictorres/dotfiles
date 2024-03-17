@@ -5,7 +5,6 @@ SAVEHIST=100000
 # vim bindings
 bindkey -v
 
-
 fpath=( "$HOME/.zfunctions" $fpath )
 
 # Guess what to install when running an unknown command.
@@ -181,4 +180,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
