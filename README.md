@@ -33,6 +33,5 @@ chsh -s $(which zsh)
 - please see [Adding your SSH key to the ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent)
 
 ## Adding Touch ID support for `sudo`ing
-
 - `sudo vi /etc/pam.d/sudo`
 - add the following line to the top: `auth sufficient pam_tid.so`
