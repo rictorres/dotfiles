@@ -15,7 +15,6 @@ brew install --cask firefox
 brew install --cask rectangle
 brew install --cask spotify
 brew install --cask caffeine
-brew install --cask simplenote
 brew install --cask whatsapp
 brew install --cask telegram
 brew install --cask discord

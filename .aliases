@@ -32,7 +32,7 @@ alias la="ls -laF ${colorflag}"
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # List all files using Exa
-alias e="exa -ghla"
+alias e="eza -ghla"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
