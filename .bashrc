@@ -3,4 +3,4 @@
 if [ -r $(brew --prefix)/opt/mcfly/mcfly.bash ]; then
   . $(brew --prefix)/opt/mcfly/mcfly.bash
 fi
-. "$HOME/.cargo/env"
+if [ -r "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
