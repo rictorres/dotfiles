@@ -1,6 +1,7 @@
 # git credential file
 .gitconfig.local
 .extra
+.secret-cask.sh
 
 # Folder view configuration files
 .DS_Store

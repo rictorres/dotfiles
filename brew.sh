@@ -30,9 +30,6 @@ brew install bash
 
 brew install bash-completion
 
-# deprecated
-# brew install homebrew/completions/brew-cask-completion
-
 # Install `wget` with IRI support.
 brew install wget
 
@@ -52,24 +49,25 @@ brew install z
 # https://github.com/so-fancy/diff-so-fancy
 brew install diff-so-fancy
 
-# mysql autocomplete (https://github.com/dbcli/mycli)
-brew install mycli
-
 # Install other useful binaries
 brew install fzf
 brew install git
-brew install imagemagick
 brew install speedtest-cli
 brew install tree
 brew install ffmpeg
 brew install mas
-brew install exa # https://bsago.me/exa/
+brew install eza # https://github.com/eza-community/eza
 brew install ncdu # find where your diskspace went
 brew install awscli
 brew install bat
 brew install jq
 brew install terraform
 brew install lsd # https://github.com/Peltoche/lsd
+brew install fnm # node version manager
+brew install atuin
+
+brew install rust
+brew install deno
 
 brew install zsh
 

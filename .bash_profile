@@ -1,5 +1,5 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
+export PATH="$HOME/bin:$HOME/.deno/bin:$PATH";
 #export PATH="$HOME/bin:$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin";
 
 # Load the shell dotfiles, and then some:
@@ -101,3 +101,4 @@ fi;
 complete -W "NSGlobalDomain" defaults;
 
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+. "$HOME/.cargo/env"
