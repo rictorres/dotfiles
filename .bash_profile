@@ -101,4 +101,4 @@ fi;
 complete -W "NSGlobalDomain" defaults;
 
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
-. "$HOME/.cargo/env"
+if [ -r "$HOME/.cargo/env" ]; then . "$HOME/.cargo/env"; fi
