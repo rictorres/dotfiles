@@ -181,3 +181,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval "$(atuin init zsh)"
+eval "$(fnm env --use-on-cd)"

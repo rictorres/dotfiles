@@ -7,7 +7,7 @@ brew install homebrew/cask-cask
 
 # browsers
 brew install --cask google-chrome
-brew install --cask google-chrome-canary
+brew install --cask google-chrome@canary
 brew install --cask brave-browser
 brew install --cask firefox
 
